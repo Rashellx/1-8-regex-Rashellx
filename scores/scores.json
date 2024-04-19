@@ -12,6 +12,9 @@
       "FrScTe9": 1,
       "FrScTe10": 0,
       "FrScTe11": 0,
+      "FrScTe12": 1,
+      "FrScTe13": 0,
+      "FrScTe14": 0,
       "FrScTe12": 0,
       "FrScTe13": 1,
       "FrScTe14": 1,
@@ -68,6 +71,48 @@
   "humanReadable": {
     "From Scratch Tests": "12/16",
     "finalTestScore": "FINAL SCORE: 12/18",
+    "From Scratch Tests": "10/16",
+    "finalTestScore": "FINAL SCORE: 10/18",
+    "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case": "FrScTe16"
+  },
+  "testScores": {
+    "Debug Tests": {
+      "DeTe1": 0
+    },
+    "Modify Tests": {
+      "MoTe1": 0
+    },
+    "From Scratch Tests": {
+      "FrScTe1": 1,
+      "FrScTe2": 1,
+      "FrScTe3": 1,
+      "FrScTe4": 1,
+      "FrScTe5": 1,
+      "FrScTe6": 0,
+      "FrScTe7": 0,
+      "FrScTe8": 1,
+      "FrScTe9": 0,
+      "FrScTe10": 1,
+      "FrScTe11": 0,
+      "FrScTe12": 0,
+      "FrScTe13": 0,
+      "FrScTe14": 0,
+      "FrScTe15": 0,
+      "FrScTe16": 0
+    }
+  },
+  "humanReadable": {
+    "Debug Tests": "0/1",
+    "finalTestScore": "FINAL SCORE: 7/18",
+    "Modify Tests": "0/1",
+    "From Scratch Tests": "7/16"
+    "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case": "FrScTe16",
+    "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each": "MoTe1",
+    "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username": "DeTe1"
+  },
+  "humanReadable": {
+    "From Scratch Tests": "11/16",
+    "finalTestScore": "FINAL SCORE: 11/18",
     "Modify Tests": "0/1",
     "Debug Tests": "0/1"
   }

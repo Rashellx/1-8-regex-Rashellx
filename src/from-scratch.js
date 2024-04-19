@@ -92,20 +92,39 @@ const hasNoFlippers = (str) => {
 const isValidEmail = (str) => {
   return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(str)
 };
-console.log(isValidEmail('a@b.co'))
+// console.log(isValidEmail('a@b.co'))
 
 // Question 9: Abdullah & Madhur
 const isValidPhoneNumber = (str) => {
   return /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(str)
 };
 
-const matchAllNumbers = (str) => { };
+//Question 10
+
+const matchAllNumbers = (str) => {
+  const regex = /\d+/g
+  return str.match(regex) || []
+};
+console.log(matchAllNumbers("My favorite number is 12.")); // ['12']
+console.log(matchAllNumbers("I have no favorite number.")); // []
+console.log(matchAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // ['40', '0']
+console.log(matchAllNumbers("I have 1 dog, 2 cats, and 4 bunnies. Oh wait, 8 bunnies.")); // ['1', '2', '4', '8']
 
 const matchAllNumbersAsNumbers = (str) => { 
 
 };
 
-const matchAllWords = (str) => { };
+// Question 12 : Fiona 
+const matchAllWords = (str) => {
+  return str.match(/[a-zA-Z']+/g) || []
+    };
+console.log(matchAllWords("Hello world!")); // ['Hello', 'world']
+console.log(matchAllWords("It looks like...rain today?")); // ['It', 'looks', 'like', 'rain', 'today']
+console.log(matchAllWords("")); // []
+console.log(matchAllWords("I don't think I'm going, but you can!")); // ["I", "don't", "think", "I'm", "going", "but", "you", "can"]
+console.log(matchAllWords("wow_this_screen_name_is_long")); // ['wow', 'this', 'screen', 'name', 'is', 'long']
+console.log(matchAllWords("I have 3 dogs, 2 cats, and 10 bunnies.")); // ['I', 'have', 'dogs', 'cats', 'and', 'bunnies']
+console.log(matchAllWords("123"));
 
 // Question 13 : Abdullah 
 const replaceAllNumbers = (str) => {
