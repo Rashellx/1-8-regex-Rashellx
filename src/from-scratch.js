@@ -56,6 +56,7 @@ const hasPunctuationEnd = (str) => { };
 
 const hasNothingOrDigits = (str) => { };
 
+//Question 7 : Abdullah & Fiona
 const hasNoFlippers = (str) => { 
   // const flippers = ['B, C, c, D, E, H, I, K, O, o, X, x, l']
   return /[^B, C, c, D, E, H, I, K, O, o, X, x, l]*$/y.test(str)
