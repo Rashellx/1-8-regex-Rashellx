@@ -60,16 +60,15 @@ const hasNothingOrDigits = (str) => { };
 const hasNoFlippers = (str) => { 
   // const flippers = ['B, C, c, D, E, H, I, K, O, o, X, x, l']
   return /[^B, C, c, D, E, H, I, K, O, o, X, x, l]*$/y.test(str)
-
 };
-console.log(hasNoFlippers("Z")); // true
-console.log(hasNoFlippers("Zabdabbq")); // true
-console.log(hasNoFlippers("")); // true
-console.log(hasNoFlippers("abd")); // true
-console.log(hasNoFlippers("B")); // false
-console.log(hasNoFlippers("BC")); // false
-console.log(hasNoFlippers("oao")); // false
-console.log(hasNoFlippers("abdefo")); // false
+// console.log(hasNoFlippers("Z")); // true
+// console.log(hasNoFlippers("Zabdabbq")); // true
+// console.log(hasNoFlippers("")); // true
+// console.log(hasNoFlippers("abd")); // true
+// console.log(hasNoFlippers("B")); // false
+// console.log(hasNoFlippers("BC")); // false
+// console.log(hasNoFlippers("oao")); // false
+// console.log(hasNoFlippers("abdefo")); // false
 
 const isValidEmail = (str) => { };
 
