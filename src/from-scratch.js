@@ -27,10 +27,18 @@ const hasAVowel = (str) => {
 // console.log(hasAVowel("y")); // false
 
 // Question 3: 
-const hasCatsOrDogs = (str) => {};
+const hasCatsOrDogs = (str) => {
+  return /cats|dogs/gi.test(str);
+};
+console.log(hasCatsOrDogs("Gosh, I love having so many cats!")); // true
+console.log(hasCatsOrDogs("Wow, I have a lot of dogs!")); // true
+console.log(hasCatsOrDogs("Cats rule!")); // true
+console.log(hasCatsOrDogs(("I do not care for that dog."))); // false
+console.log(hasCatsOrDogs(("Cat? No way."))); // false
+console.log(hasCatsOrDogs(("Cat? No, but I have a ton of dogs."))); // true
 
 // Question 4: Abdullah
-const hasVowelStart = (str) => { 
+const hasVowelStart = (str) => {
   return /[aeiou]/giy.test(str)
 };
 
