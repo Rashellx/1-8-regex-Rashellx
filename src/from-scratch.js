@@ -63,7 +63,16 @@ const hasPunctuationEnd = (str) => {
 // console.log(hasPunctuationEnd("a?b")); // false
 // console.log(hasPunctuationEnd("")); // false
 
-const hasNothingOrDigits = (str) => { };
+// Question 6: Fiona
+console.log('\n Question 6 Returns')
+const hasNothingOrDigits = (str) => {
+  return /^[0-9]*$/gi.test(str)
+}
+console.log(hasNothingOrDigits("")); // true
+console.log(hasNothingOrDigits("123")); // true
+console.log(hasNothingOrDigits("abc")); // false
+console.log(hasNothingOrDigits("123abc")); // false
+console.log(hasNothingOrDigits("abc123")); // false
 
 const hasNoFlippers = (str) => { };
 
