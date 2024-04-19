@@ -18,7 +18,7 @@
       "FrScTe12": 0,
       "FrScTe13": 1,
       "FrScTe14": 1,
-      "FrScTe15": 0,
+      "FrScTe15": 1,
       "FrScTe16": 0
     },
     "Modify Tests": {
@@ -69,6 +69,8 @@
     "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username": "DeTe1"
   },
   "humanReadable": {
+    "From Scratch Tests": "12/16",
+    "finalTestScore": "FINAL SCORE: 12/18",
     "From Scratch Tests": "10/16",
     "finalTestScore": "FINAL SCORE: 10/18",
     "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case": "FrScTe16"
