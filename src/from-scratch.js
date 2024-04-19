@@ -92,14 +92,23 @@ const hasNoFlippers = (str) => {
 const isValidEmail = (str) => {
   return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(str)
 };
-console.log(isValidEmail('a@b.co'))
+// console.log(isValidEmail('a@b.co'))
 
 // Question 9: Abdullah & Madhur
 const isValidPhoneNumber = (str) => {
   return /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(str)
 };
 
-const matchAllNumbers = (str) => { };
+//Question 10
+
+const matchAllNumbers = (str) => {
+  const regex = /\d+/g
+  return str.match(regex) || []
+};
+console.log(matchAllNumbers("My favorite number is 12.")); // ['12']
+console.log(matchAllNumbers("I have no favorite number.")); // []
+console.log(matchAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // ['40', '0']
+console.log(matchAllNumbers("I have 1 dog, 2 cats, and 4 bunnies. Oh wait, 8 bunnies.")); // ['1', '2', '4', '8']
 
 const matchAllNumbersAsNumbers = (str) => { 
 
