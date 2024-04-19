@@ -30,12 +30,12 @@ const hasAVowel = (str) => {
 const hasCatsOrDogs = (str) => {
   return /cats|dogs/gi.test(str);
 };
-console.log(hasCatsOrDogs("Gosh, I love having so many cats!")); // true
-console.log(hasCatsOrDogs("Wow, I have a lot of dogs!")); // true
-console.log(hasCatsOrDogs("Cats rule!")); // true
-console.log(hasCatsOrDogs(("I do not care for that dog."))); // false
-console.log(hasCatsOrDogs(("Cat? No way."))); // false
-console.log(hasCatsOrDogs(("Cat? No, but I have a ton of dogs."))); // true
+// console.log(hasCatsOrDogs("Gosh, I love having so many cats!")); // true
+// console.log(hasCatsOrDogs("Wow, I have a lot of dogs!")); // true
+// console.log(hasCatsOrDogs("Cats rule!")); // true
+// console.log(hasCatsOrDogs(("I do not care for that dog."))); // false
+// console.log(hasCatsOrDogs(("Cat? No way."))); // false
+// console.log(hasCatsOrDogs(("Cat? No, but I have a ton of dogs."))); // true
 
 // Question 4: Abdullah
 const hasVowelStart = (str) => {
@@ -55,19 +55,23 @@ const hasVowelStart = (str) => {
 const hasPunctuationEnd = (str) => {
   return /[.]$|[?]$|[!]$/gi.test(str);
 };
-console.log(hasPunctuationEnd("a.")); // true
-console.log(hasPunctuationEnd("a!")); // true
-console.log(hasPunctuationEnd("a?")); // true
-console.log(hasPunctuationEnd("a")); // false
-console.log(hasPunctuationEnd("a!a")); // false
-console.log(hasPunctuationEnd("a?b")); // false
-console.log(hasPunctuationEnd("")); // false
+// console.log(hasPunctuationEnd("a.")); // true
+// console.log(hasPunctuationEnd("a!")); // true
+// console.log(hasPunctuationEnd("a?")); // true
+// console.log(hasPunctuationEnd("a")); // false
+// console.log(hasPunctuationEnd("a!a")); // false
+// console.log(hasPunctuationEnd("a?b")); // false
+// console.log(hasPunctuationEnd("")); // false
 
 const hasNothingOrDigits = (str) => { };
 
 const hasNoFlippers = (str) => { };
 
-const isValidEmail = (str) => { };
+//Question 8: Rashell 
+const isValidEmail = (str) => {
+  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(str)
+};
+console.log(isValidEmail('a@b.co'))
 
 const isValidPhoneNumber = (str) => { };
 
