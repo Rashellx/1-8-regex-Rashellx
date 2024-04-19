@@ -99,16 +99,23 @@ const isValidPhoneNumber = (str) => {
   return /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(str)
 };
 
-
 const matchAllNumbers = (str) => { };
 
-const matchAllNumbersAsNumbers = (str) => { };
+const matchAllNumbersAsNumbers = (str) => { 
+
+};
 
 const matchAllWords = (str) => { };
 
-const replaceAllNumbers = (str) => { };
+// Question 13 : Abdullah 
+const replaceAllNumbers = (str) => {
+  return str.replace(/[\d]+/g, "???")
+ };
+ console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
+ console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
+ console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
 
-const fixFileName = (str) => { };
+ const fixFileName = (str) => { };
 
 const nameRedacter = (str) => { };
 
