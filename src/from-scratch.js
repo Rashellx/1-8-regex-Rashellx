@@ -117,7 +117,7 @@ const replaceAllNumbers = (str) => {
 
  // Question 14 : Abdullah
  const fixFileName = (str) => {
-  return str.replace(/\s/g, "_")
+  return str.replace(/\s+/g, "_")
  };
 console.log(fixFileName("hello world")); // 'hello_world'
 console.log(fixFileName("hello   world")); // 'hello_world'
