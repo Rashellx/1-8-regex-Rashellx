@@ -115,8 +115,9 @@ const replaceAllNumbers = (str) => {
  console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
  console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
 
+ // Question 14 : Abdullah
  const fixFileName = (str) => {
-  return str.replace(/\s+/g, "_")
+  return str.replace(/\s/g, "_")
  };
 console.log(fixFileName("hello world")); // 'hello_world'
 console.log(fixFileName("hello   world")); // 'hello_world'
