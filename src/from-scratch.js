@@ -72,6 +72,7 @@ console.log(hasNoFlippers("abdefo")); // false
 
 const isValidEmail = (str) => { };
 
+
 const isValidPhoneNumber = (str) => {
   return /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(str)
 };
