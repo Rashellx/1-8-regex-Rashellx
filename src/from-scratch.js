@@ -57,7 +57,7 @@ const hasPunctuationEnd = (str) => { };
 const hasNothingOrDigits = (str) => { };
 
 const hasNoFlippers = (str) => { 
-  return /
+  return str.forEach((e) => str.length)
 };
 
 const isValidEmail = (str) => { };
