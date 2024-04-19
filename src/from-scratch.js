@@ -104,7 +104,17 @@ const matchAllNumbers = (str) => { };
 
 const matchAllNumbersAsNumbers = (str) => { };
 
-const matchAllWords = (str) => { };
+// Question 12 : Fiona & Madhur & Abdullah
+const matchAllWords = (str) => {
+  return str.match(/[a-zA-Z']+/g) || []
+    };
+console.log(matchAllWords("Hello world!")); // ['Hello', 'world']
+console.log(matchAllWords("It looks like...rain today?")); // ['It', 'looks', 'like', 'rain', 'today']
+console.log(matchAllWords("")); // []
+console.log(matchAllWords("I don't think I'm going, but you can!")); // ["I", "don't", "think", "I'm", "going", "but", "you", "can"]
+console.log(matchAllWords("wow_this_screen_name_is_long")); // ['wow', 'this', 'screen', 'name', 'is', 'long']
+console.log(matchAllWords("I have 3 dogs, 2 cats, and 10 bunnies.")); // ['I', 'have', 'dogs', 'cats', 'and', 'bunnies']
+console.log(matchAllWords("123"));
 
 const replaceAllNumbers = (str) => { };
 
