@@ -115,7 +115,14 @@ const replaceAllNumbers = (str) => {
  console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
  console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
 
- const fixFileName = (str) => { };
+ const fixFileName = (str) => {
+  return str.replace(/\s+/g, "_")
+ };
+console.log(fixFileName("hello world")); // 'hello_world'
+console.log(fixFileName("hello   world")); // 'hello_world'
+console.log(fixFileName("first hw-trial spring")); // 'first_hw-trial_spring'
+console.log(fixFileName("")); // ''
+console.log(fixFileName("assignment-12")); // 'assignment-12'
 
 const nameRedacter = (str) => { };
 
