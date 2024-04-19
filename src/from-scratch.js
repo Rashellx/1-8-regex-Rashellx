@@ -26,7 +26,7 @@ const hasAVowel = (str) => {
 // console.log(hasAVowel("xzy")); // false
 // console.log(hasAVowel("y")); // false
 
-// Question 3: 
+// Question 3: Rashell
 const hasCatsOrDogs = (str) => {
   return /cats|dogs/gi.test(str);
 };
@@ -51,8 +51,17 @@ const hasVowelStart = (str) => {
 // console.log(hasVowelStart("")); // false
 // console.log(hasVowelStart('Hello'))
 
-
-const hasPunctuationEnd = (str) => { };
+//Question 5: Rashell
+const hasPunctuationEnd = (str) => {
+  return /[.]$|[?]$|[!]$/gi.test(str);
+};
+console.log(hasPunctuationEnd("a.")); // true
+console.log(hasPunctuationEnd("a!")); // true
+console.log(hasPunctuationEnd("a?")); // true
+console.log(hasPunctuationEnd("a")); // false
+console.log(hasPunctuationEnd("a!a")); // false
+console.log(hasPunctuationEnd("a?b")); // false
+console.log(hasPunctuationEnd("")); // false
 
 const hasNothingOrDigits = (str) => { };
 
