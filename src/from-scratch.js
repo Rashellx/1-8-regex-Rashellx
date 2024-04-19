@@ -26,7 +26,7 @@ const hasAVowel = (str) => {
 // console.log(hasAVowel("xzy")); // false
 // console.log(hasAVowel("y")); // false
 
-// Question 3: 
+// Question 3: Rashell
 const hasCatsOrDogs = (str) => {
   return /cats|dogs/gi.test(str);
 };
@@ -51,10 +51,28 @@ const hasVowelStart = (str) => {
 // console.log(hasVowelStart("")); // false
 // console.log(hasVowelStart('Hello'))
 
+//Question 5: Rashell
+const hasPunctuationEnd = (str) => {
+  return /[.]$|[?]$|[!]$/gi.test(str);
+};
+// console.log(hasPunctuationEnd("a.")); // true
+// console.log(hasPunctuationEnd("a!")); // true
+// console.log(hasPunctuationEnd("a?")); // true
+// console.log(hasPunctuationEnd("a")); // false
+// console.log(hasPunctuationEnd("a!a")); // false
+// console.log(hasPunctuationEnd("a?b")); // false
+// console.log(hasPunctuationEnd("")); // false
 
-const hasPunctuationEnd = (str) => { };
-
-const hasNothingOrDigits = (str) => { };
+// Question 6: Fiona
+console.log('\n Question 6 Returns')
+const hasNothingOrDigits = (str) => {
+  return /^[0-9]*$/gi.test(str)
+}
+console.log(hasNothingOrDigits("")); // true
+console.log(hasNothingOrDigits("123")); // true
+console.log(hasNothingOrDigits("abc")); // false
+console.log(hasNothingOrDigits("123abc")); // false
+console.log(hasNothingOrDigits("abc123")); // false
 
 //Question 7 : Abdullah & Fiona
 const hasNoFlippers = (str) => { 
@@ -70,7 +88,11 @@ const hasNoFlippers = (str) => {
 // console.log(hasNoFlippers("oao")); // false
 // console.log(hasNoFlippers("abdefo")); // false
 
-const isValidEmail = (str) => { };
+//Question 8: Rashell 
+const isValidEmail = (str) => {
+  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(str)
+};
+console.log(isValidEmail('a@b.co'))
 
 const isValidPhoneNumber = (str) => { };
 
