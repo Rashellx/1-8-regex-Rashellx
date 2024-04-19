@@ -125,7 +125,14 @@ console.log(fixFileName("first hw-trial spring")); // 'first_hw-trial_spring'
 console.log(fixFileName("")); // ''
 console.log(fixFileName("assignment-12")); // 'assignment-12'
 
-const nameRedacter = (str) => { };
+// Question 15 : Abdullah
+const nameRedacter = (str) => {
+  return str.replace(/[A-Z]/gm, 'REDACTED')
+ };
+ console.log(nameRedacter("My name is ITZEL.")); // 'My name is REDACTED.'
+ console.log(nameRedacter("I have no name.")); // 'I have no name.'
+ console.log(nameRedacter("Today is MAYA's first day, ZO will help her out.")); // "Today is REDACTED's first day, REDACTED will help her out."
+
 
 const camelToSnakeCase = (str) => { };
 
