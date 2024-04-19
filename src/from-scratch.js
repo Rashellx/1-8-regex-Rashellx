@@ -104,7 +104,7 @@ const matchAllNumbers = (str) => { };
 
 const matchAllNumbersAsNumbers = (str) => { };
 
-// Question 12 : Fiona & Madhur & Abdullah
+// Question 12 : Fiona 
 const matchAllWords = (str) => {
   return str.match(/[a-zA-Z']+/g) || []
     };
