@@ -68,11 +68,11 @@ console.log('\n Question 6 Returns')
 const hasNothingOrDigits = (str) => {
   return /^[0-9]*$/gi.test(str)
 }
-console.log(hasNothingOrDigits("")); // true
-console.log(hasNothingOrDigits("123")); // true
-console.log(hasNothingOrDigits("abc")); // false
-console.log(hasNothingOrDigits("123abc")); // false
-console.log(hasNothingOrDigits("abc123")); // false
+// console.log(hasNothingOrDigits("")); // true
+// console.log(hasNothingOrDigits("123")); // true
+// console.log(hasNothingOrDigits("abc")); // false
+// console.log(hasNothingOrDigits("123abc")); // false
+// console.log(hasNothingOrDigits("abc123")); // false
 
 //Question 7 : Abdullah & Fiona
 const hasNoFlippers = (str) => { 
@@ -110,24 +110,24 @@ const matchAllWords = (str) => { };
 // Question 13 : Abdullah 
 const replaceAllNumbers = (str) => {
   return str.replace(/[\d]+/g, "???")
- };
- console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
- console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
- console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
+}
+//  console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
+//  console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
+//  console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
 
  // Question 14 : Abdullah
  const fixFileName = (str) => {
   return str.replace(/\s+/g, "_")
  };
-console.log(fixFileName("hello world")); // 'hello_world'
-console.log(fixFileName("hello   world")); // 'hello_world'
-console.log(fixFileName("first hw-trial spring")); // 'first_hw-trial_spring'
-console.log(fixFileName("")); // ''
-console.log(fixFileName("assignment-12")); // 'assignment-12'
+// console.log(fixFileName("hello world")); // 'hello_world'
+// console.log(fixFileName("hello   world")); // 'hello_world'
+// console.log(fixFileName("first hw-trial spring")); // 'first_hw-trial_spring'
+// console.log(fixFileName("")); // ''
+// console.log(fixFileName("assignment-12")); // 'assignment-12'
 
-// Question 15 : Abdullah
+// Question 15 : Abdullah + Madhur 
 const nameRedacter = (str) => {
-  return str.replace(/[A-Z]/gm, 'REDACTED')
+  return str.replace(/[A-Z]{2,}/g, 'REDACTED')
  };
  console.log(nameRedacter("My name is ITZEL.")); // 'My name is REDACTED.'
  console.log(nameRedacter("I have no name.")); // 'I have no name.'
