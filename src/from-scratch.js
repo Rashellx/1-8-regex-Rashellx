@@ -30,14 +30,14 @@ const hasAVowel = (str) => {
 const hasCatsOrDogs = (str) => {
   return /cats|dogs/gi.test(str);
 };
-console.log(hasCatsOrDogs("Gosh, I love having so many cats!")); // true
-console.log(hasCatsOrDogs("Wow, I have a lot of dogs!")); // true
-console.log(hasCatsOrDogs("Cats rule!")); // true
-console.log(hasCatsOrDogs(("I do not care for that dog."))); // false
-console.log(hasCatsOrDogs(("Cat? No way."))); // false
-console.log(hasCatsOrDogs(("Cat? No, but I have a ton of dogs."))); // true
+// console.log(hasCatsOrDogs("Gosh, I love having so many cats!")); // true
+// console.log(hasCatsOrDogs("Wow, I have a lot of dogs!")); // true
+// console.log(hasCatsOrDogs("Cats rule!")); // true
+// console.log(hasCatsOrDogs(("I do not care for that dog."))); // false
+// console.log(hasCatsOrDogs(("Cat? No way."))); // false
+// console.log(hasCatsOrDogs(("Cat? No, but I have a ton of dogs."))); // true
 
-// Question 4: Abdullah
+// // Question 4: Abdullah
 const hasVowelStart = (str) => {
   return /[aeiou]/giy.test(str)
 };
@@ -57,8 +57,18 @@ const hasPunctuationEnd = (str) => { };
 const hasNothingOrDigits = (str) => { };
 
 const hasNoFlippers = (str) => { 
-  return str.forEach((e) => str.length)
+  // const flippers = ['B, C, c, D, E, H, I, K, O, o, X, x, l']
+  return /[^B, C, c, D, E, H, I, K, O, o, X, x, l]*$/y.test(str)
+
 };
+console.log(hasNoFlippers("Z")); // true
+console.log(hasNoFlippers("Zabdabbq")); // true
+console.log(hasNoFlippers("")); // true
+console.log(hasNoFlippers("abd")); // true
+console.log(hasNoFlippers("B")); // false
+console.log(hasNoFlippers("BC")); // false
+console.log(hasNoFlippers("oao")); // false
+console.log(hasNoFlippers("abdefo")); // false
 
 const isValidEmail = (str) => { };
 
