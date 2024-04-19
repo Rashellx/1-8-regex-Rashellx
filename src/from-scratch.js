@@ -37,7 +37,7 @@ const hasCatsOrDogs = (str) => {
 // console.log(hasCatsOrDogs(("Cat? No way."))); // false
 // console.log(hasCatsOrDogs(("Cat? No, but I have a ton of dogs."))); // true
 
-// Question 4: Abdullah
+// // Question 4: Abdullah
 const hasVowelStart = (str) => {
   return /[aeiou]/giy.test(str)
 };
@@ -74,7 +74,19 @@ console.log(hasNothingOrDigits("abc")); // false
 console.log(hasNothingOrDigits("123abc")); // false
 console.log(hasNothingOrDigits("abc123")); // false
 
-const hasNoFlippers = (str) => { };
+//Question 7 : Abdullah & Fiona
+const hasNoFlippers = (str) => { 
+  // const flippers = ['B, C, c, D, E, H, I, K, O, o, X, x, l']
+  return /[^B, C, c, D, E, H, I, K, O, o, X, x, l]*$/y.test(str)
+};
+// console.log(hasNoFlippers("Z")); // true
+// console.log(hasNoFlippers("Zabdabbq")); // true
+// console.log(hasNoFlippers("")); // true
+// console.log(hasNoFlippers("abd")); // true
+// console.log(hasNoFlippers("B")); // false
+// console.log(hasNoFlippers("BC")); // false
+// console.log(hasNoFlippers("oao")); // false
+// console.log(hasNoFlippers("abdefo")); // false
 
 //Question 8: Rashell 
 const isValidEmail = (str) => {
