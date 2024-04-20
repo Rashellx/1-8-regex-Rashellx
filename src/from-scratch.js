@@ -68,14 +68,14 @@ console.log('\n Question 6 Returns')
 const hasNothingOrDigits = (str) => {
   return /^[0-9]*$/gi.test(str)
 }
-console.log(hasNothingOrDigits("")); // true
-console.log(hasNothingOrDigits("123")); // true
-console.log(hasNothingOrDigits("abc")); // false
-console.log(hasNothingOrDigits("123abc")); // false
-console.log(hasNothingOrDigits("abc123")); // false
+// console.log(hasNothingOrDigits("")); // true
+// console.log(hasNothingOrDigits("123")); // true
+// console.log(hasNothingOrDigits("abc")); // false
+// console.log(hasNothingOrDigits("123abc")); // false
+// console.log(hasNothingOrDigits("abc123")); // false
 
 //Question 7 : Abdullah & Fiona
-const hasNoFlippers = (str) => { 
+const hasNoFlippers = (str) => {
   // const flippers = ['B, C, c, D, E, H, I, K, O, o, X, x, l']
   return /[^B, C, c, D, E, H, I, K, O, o, X, x, l]*$/y.test(str)
 };
@@ -105,36 +105,64 @@ const matchAllNumbers = (str) => {
   const regex = /\d+/g
   return str.match(regex) || []
 };
-console.log(matchAllNumbers("My favorite number is 12.")); // ['12']
-console.log(matchAllNumbers("I have no favorite number.")); // []
-console.log(matchAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // ['40', '0']
-console.log(matchAllNumbers("I have 1 dog, 2 cats, and 4 bunnies. Oh wait, 8 bunnies.")); // ['1', '2', '4', '8']
+// console.log(matchAllNumbers("My favorite number is 12.")); // ['12']
+// console.log(matchAllNumbers("I have no favorite number.")); // []
+// console.log(matchAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // ['40', '0']
+// console.log(matchAllNumbers("I have 1 dog, 2 cats, and 4 bunnies. Oh wait, 8 bunnies.")); // ['1', '2', '4', '8']
 
-const matchAllNumbersAsNumbers = (str) => { 
-
+//Question 11: Rashell
+const matchAllNumbersAsNumbers = (str) => {
+  return matchAllNumbers(str).map((x) => Number(x)) || []
 };
 
-const matchAllWords = (str) => { };
+console.log(matchAllNumbersAsNumbers("My favorite number is 12.")); // ['12']
+console.log(matchAllNumbersAsNumbers("I have no favorite number.")); // []
+console.log(matchAllNumbersAsNumbers("There were 40 fire drills last year, and luckily 0 fires")); // ['40', '0']
+console.log(matchAllNumbersAsNumbers("I have 1 dog, 2 cats, and 4 bunnies. Oh wait, 8 bunnies.")); // ['1', '2', '4', '8']
+
+
+// Question 12 : Fiona 
+const matchAllWords = (str) => {
+  return str.match(/[a-zA-Z']+/g) || []
+};
+console.log(matchAllWords("Hello world!")); // ['Hello', 'world']
+console.log(matchAllWords("It looks like...rain today?")); // ['It', 'looks', 'like', 'rain', 'today']
+console.log(matchAllWords("")); // []
+console.log(matchAllWords("I don't think I'm going, but you can!")); // ["I", "don't", "think", "I'm", "going", "but", "you", "can"]
+console.log(matchAllWords("wow_this_screen_name_is_long")); // ['wow', 'this', 'screen', 'name', 'is', 'long']
+console.log(matchAllWords("I have 3 dogs, 2 cats, and 10 bunnies.")); // ['I', 'have', 'dogs', 'cats', 'and', 'bunnies']
+console.log(matchAllWords("123"));
 
 // Question 13 : Abdullah 
 const replaceAllNumbers = (str) => {
   return str.replace(/[\d]+/g, "???")
- };
- console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
- console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
- console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
+};
+console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
+console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
+console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
+//  console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
+//  console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
+//  console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
 
- // Question 14 : Abdullah
- const fixFileName = (str) => {
+// Question 14 : Abdullah
+const fixFileName = (str) => {
   return str.replace(/\s+/g, "_")
- };
-console.log(fixFileName("hello world")); // 'hello_world'
-console.log(fixFileName("hello   world")); // 'hello_world'
-console.log(fixFileName("first hw-trial spring")); // 'first_hw-trial_spring'
-console.log(fixFileName("")); // ''
-console.log(fixFileName("assignment-12")); // 'assignment-12'
+};
 
-const nameRedacter = (str) => { };
+// console.log(fixFileName("hello world")); // 'hello_world'
+// console.log(fixFileName("hello   world")); // 'hello_world'
+// console.log(fixFileName("first hw-trial spring")); // 'first_hw-trial_spring'
+// console.log(fixFileName("")); // ''
+// console.log(fixFileName("assignment-12")); // 'assignment-12'
+
+// Question 15 : Abdullah + Madhur 
+const nameRedacter = (str) => {
+  return str.replace(/[A-Z]{2,}/g, 'REDACTED')
+ };
+ console.log(nameRedacter("My name is ITZEL.")); // 'My name is REDACTED.'
+ console.log(nameRedacter("I have no name.")); // 'I have no name.'
+ console.log(nameRedacter("Today is MAYA's first day, ZO will help her out.")); // "Today is REDACTED's first day, REDACTED will help her out."
+
 
 // Question 16 : Fiona & Madhur
 console.log('/n QUESTION 16')
