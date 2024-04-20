@@ -16,10 +16,10 @@
       "FrScTe13": 1,
       "FrScTe14": 1,
       "FrScTe15": 1,
-      "FrScTe16": 0
+      "FrScTe16": 1
     },
     "Modify Tests": {
-      "MoTe1": 0
+      "MoTe1": 1
     },
     "Debug Tests": {
       "DeTe1": 1
@@ -54,6 +54,9 @@
     "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username": "DeTe1"
   },
   "humanReadable": {
+    "From Scratch Tests": "16/16",
+    "finalTestScore": "FINAL SCORE: 17/18",
+    "Modify Tests": "1/1",
     "Modify Tests": "0/1",
     "finalTestScore": "FINAL SCORE: 1/2",
     "Debug Tests": "1/1"
