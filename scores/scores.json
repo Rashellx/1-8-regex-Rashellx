@@ -10,6 +10,8 @@
       "FrScTe7": 1,
       "FrScTe8": 1,
       "FrScTe9": 1,
+      "FrScTe10": 1,
+      "FrScTe11": 1,
       "FrScTe10": 0,
       "FrScTe11": 0,
       "FrScTe12": 1,
@@ -21,11 +23,11 @@
       "FrScTe15": 1,
       "FrScTe16": 0
     },
-    "Modify Tests": {
-      "MoTe1": 0
-    },
     "Debug Tests": {
       "DeTe1": 0
+    },
+    "Modify Tests": {
+      "MoTe1": 0
     }
   },
   "idToTestNameHash": {
@@ -45,8 +47,8 @@
     "FrScTe14": "From Scratch Tests fixFileName - replaces all the whitespace in the string with underscores",
     "FrScTe15": "From Scratch Tests nameRedacter - replaces all the words in the string that are 2 or more characters long and all uppercase with \"REDACTED\"",
     "FrScTe16": "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case",
-    "MoTe1": "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each",
-    "DeTe1": "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username"
+    "DeTe1": "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username",
+    "MoTe1": "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each"
   },
   "testNameToIdHash": {
     "From Scratch Tests helloWorldRegex - if the string contains \"hello world\" regardless of case it returns true": "FrScTe1",
@@ -107,13 +109,13 @@
     "Modify Tests": "0/1",
     "From Scratch Tests": "7/16"
     "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case": "FrScTe16",
-    "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each": "MoTe1",
-    "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username": "DeTe1"
+    "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username": "DeTe1",
+    "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each": "MoTe1"
   },
   "humanReadable": {
-    "From Scratch Tests": "11/16",
-    "finalTestScore": "FINAL SCORE: 11/18",
-    "Modify Tests": "0/1",
-    "Debug Tests": "0/1"
+    "From Scratch Tests": "13/16",
+    "finalTestScore": "FINAL SCORE: 13/18",
+    "Debug Tests": "0/1",
+    "Modify Tests": "0/1"
   }
 }
