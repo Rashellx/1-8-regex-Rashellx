@@ -136,7 +136,18 @@ console.log(fixFileName("assignment-12")); // 'assignment-12'
 
 const nameRedacter = (str) => { };
 
-const camelToSnakeCase = (str) => { };
+// Question 16 : Fiona & Madhur
+console.log('/n QUESTION 16')
+const camelToSnakeCase = (str) => {
+return str.replace(/[A-Z]/g, (l) => `_${l.toLowerCase()}`) ;
+};
+
+console.log(camelToSnakeCase("helloWorld")); // 'hello_world'
+console.log(camelToSnakeCase("helloWorldHowAreYou")); // 'hello_world_how_are_you'
+console.log(camelToSnakeCase("hello_world")); // 'hello_world'
+console.log(camelToSnakeCase("hello")); // 'hello'
+console.log(camelToSnakeCase("")); // []
+
 
 module.exports = {
   helloWorldRegex,
