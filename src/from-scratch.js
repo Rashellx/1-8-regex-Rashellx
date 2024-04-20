@@ -121,7 +121,6 @@ console.log(matchAllNumbersAsNumbers("There were 40 fire drills last year, and l
 console.log(matchAllNumbersAsNumbers("I have 1 dog, 2 cats, and 4 bunnies. Oh wait, 8 bunnies.")); // ['1', '2', '4', '8']
 
 
-const matchAllWords = (str) => { };
 // Question 12 : Fiona 
 const matchAllWords = (str) => {
   return str.match(/[a-zA-Z']+/g) || []
@@ -141,7 +140,6 @@ const replaceAllNumbers = (str) => {
 console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
 console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
 console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
-}
 //  console.log(replaceAllNumbers("My favorite number is 12.")); // 'My favorite number is ???.'
 //  console.log(replaceAllNumbers("I have no favorite number.")); // 'I have no favorite number.'
 //  console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 0 fires")); // 'There were ??? fire drills last year, and luckily ??? fires'
@@ -150,7 +148,7 @@ console.log(replaceAllNumbers("There were 40 fire drills last year, and luckily 
 const fixFileName = (str) => {
   return str.replace(/\s+/g, "_")
 };
- };
+
 // console.log(fixFileName("hello world")); // 'hello_world'
 // console.log(fixFileName("hello   world")); // 'hello_world'
 // console.log(fixFileName("first hw-trial spring")); // 'first_hw-trial_spring'
@@ -166,7 +164,18 @@ const nameRedacter = (str) => {
  console.log(nameRedacter("Today is MAYA's first day, ZO will help her out.")); // "Today is REDACTED's first day, REDACTED will help her out."
 
 
-const camelToSnakeCase = (str) => { };
+// Question 16 : Fiona & Madhur
+console.log('/n QUESTION 16')
+const camelToSnakeCase = (str) => {
+return str.replace(/[A-Z]/g, (l) => `_${l.toLowerCase()}`) ;
+};
+
+console.log(camelToSnakeCase("helloWorld")); // 'hello_world'
+console.log(camelToSnakeCase("helloWorldHowAreYou")); // 'hello_world_how_are_you'
+console.log(camelToSnakeCase("hello_world")); // 'hello_world'
+console.log(camelToSnakeCase("hello")); // 'hello'
+console.log(camelToSnakeCase("")); // []
+
 
 module.exports = {
   helloWorldRegex,
